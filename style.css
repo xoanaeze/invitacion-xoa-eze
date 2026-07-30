@@ -1,1 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Great+Vibes&display=swap');
+
+body{
+    margin:0;
+    background:#f8f3eb;
+    color:#4b443d;
+    font-family:'Cormorant Garamond', serif;
+}
+
+.portada{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px 20px;
+    background:linear-gradient(rgba(248,243,235,.82),rgba(248,243,235,.82)),
+    url("foto.jpg");
+    background-size:cover;
+    background-position:center;
+}
+
+.logo{
+    font-family:'Great Vibes',cursive;
+    font-size:65px;
+    color:#7b8b65;
+}
+
+h1{
+    font-family:'Great Vibes',cursive;
+    font-size:60px;
+    margin:10px 0;
+}
+
+h2{
+    font-size:30px;
+    font-weight:400;
+    letter-spacing:2px;
+}
+
+.frase{
+    max-width:700px;
+    font-size:24px;
+    line-height:1.8;
+    margin:30px 0;
+}
+
+.contador{
+    font-size:34px;
+    color:#7b8b65;
+    margin:35px 0;
+}
+
+.boton{
+    display:inline-block;
+    margin:10px;
+    padding:15px 30px;
+    background:#7b8b65;
+    color:white;
+    text-decoration:none;
+    border-radius:40px;
+    transition:.3s;
+}
+
+.boton:hover{
+    transform:scale(1.05);
+}
+
+.hoja{
+    font-size:30px;
+    margin:20px;
+}
 
