@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nuestra Historia - Xoa & Eze</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: "Georgia", serif;
+    background: #f8f1e5;
+    color: #4a4035;
+    text-align: center;
+}
+
+.portada {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background:
+    linear-gradient(rgba(248,241,229,0.85),rgba(248,241,229,0.85)),
+    url("https://images.unsplash.com/photo-1519741497674-611481863552");
+    background-size: cover;
+}
+
+.logo {
+    font-size: 55px;
+    color: #b08d57;
+    letter-spacing: 5px;
+}
+
+h1 {
+    font-size: 45px;
+    margin: 15px;
+}
+
+h2 {
+    font-weight: normal;
+    color: #7b8b65;
+}
+
+.frase {
+    max-width: 600px;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.contador {
+    margin: 30px;
+    font-size: 28px;
+    color: #7b8b65;
+}
+
+.boton {
+    display: inline-block;
+    background: #7b8b65;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.hoja {
+    font-size: 35px;
+    color: #7b8b65;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="portada">
+
+<div class="logo">
+X & E
+</div>
+
+<h1>Nuestra Historia</h1>
+
+<h2>Xoa & Ezequiel</h2>
+
+<p class="frase">
+14 años caminando juntos, construyendo sueños,
+superando desafíos y formando la familia que siempre soñamos.
+Hoy queremos celebrar este amor junto a quienes fueron parte de nuestra historia.
+</p>
+
+<div class="hoja">
+🌿 🍃 🌿 🍃
+</div>
+
+<div class="contador" id="contador">
+Cargando contador...
+</div>
+
+<a class="boton" href="https://wa.me/541153110610">
+Confirmar asistencia Xoa
+</a>
+
+<a class="boton" href="https://wa.me/541158295574">
+Confirmar asistencia Eze
+</a>
+
+</div>
+
+<script>
+
+var fecha = new Date("September 26, 2026 20:00:00").getTime();
+
+var tiempo = setInterval(function(){
+
+var ahora = new Date().getTime();
+
+var distancia = fecha - ahora;
+
+var dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
+
+var horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000*60*60));
+
+var minutos = Math.floor((distancia % (1000*60*60)) / (1000*60));
+
+var segundos = Math.floor((distancia % (1000*60)) / 1000);
+
+document.getElementById("contador").innerHTML =
+dias + " días " + horas + " horas " + minutos + " minutos " + segundos + " segundos";
+
+},1000);
+
+</script>
+
+</body>
+</html>
