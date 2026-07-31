@@ -127,3 +127,12 @@ h2{
 }
 
 }
+/* ====== SOBRE (preparación) ====== */
+
+.sobre{
+    display:none;
+}
+
+.invitacion{
+    display:block;
+}
