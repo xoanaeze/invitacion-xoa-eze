@@ -136,3 +136,26 @@ h2{
 .invitacion{
     display:block;
 }
+/* ===== MONOGRAMA DEL SELLO ===== */
+
+.monograma{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    line-height:1;
+}
+
+.monograma .letra{
+    font-family:'Cormorant Garamond', serif;
+    font-size:28px;
+    font-weight:600;
+    color:#f8f3eb;
+}
+
+.monograma .amp{
+    font-family:'Allura', cursive;
+    font-size:34px;
+    color:#f8f3eb;
+    margin:-4px 0;
+}
